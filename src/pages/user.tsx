@@ -10,7 +10,7 @@ import {
   useNavigate,
 } from "zmp-ui";
 import { useRecoilValue } from "recoil";
-import { displayNameState, userState } from "../state";
+import { displayNameState, userState } from "state";
 
 const UserPage = () => {
   const { userInfo: user } = useRecoilValue(userState);

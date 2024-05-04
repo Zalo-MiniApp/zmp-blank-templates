@@ -3,7 +3,7 @@ import { Sheet, Button, Page, Text, useNavigate } from "zmp-ui";
 
 const AboutPage: React.FunctionComponent = (props) => {
   const [actionSheetOpened, setActionSheetOpened] = React.useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <Page className="page">
       <div className="section-container">
@@ -11,7 +11,7 @@ const AboutPage: React.FunctionComponent = (props) => {
       </div>
       <div>
         <Button
-          variant='secondary'
+          variant="secondary"
           fullWidth
           onClick={() => setActionSheetOpened(true)}
         >

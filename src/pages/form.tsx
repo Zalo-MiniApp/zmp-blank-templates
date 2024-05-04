@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Input, Box, Page, useSnackbar } from "zmp-ui";
 import { useRecoilState } from "recoil";
-import { displayNameState } from "../state";
+import { displayNameState } from "state";
 import { useNavigate } from "react-router";
 
 const FormPage: React.FunctionComponent = () => {

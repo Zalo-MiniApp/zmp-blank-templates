@@ -1,24 +1,23 @@
 import React from "react";
-import { GetUserInfoReturns } from "zmp-sdk";
+import { useRecoilValue } from "recoil";
+import { userState } from "state";
 import { Avatar, Box, Text } from "zmp-ui";
 
-interface UserProps {
-  user: GetUserInfoReturns["userInfo"];
-}
+const UserCard: React.FunctionComponent = () => {
+  const { userInfo } = useRecoilValue(userState);
 
-const UserCard: React.FunctionComponent<UserProps> = ({ user }) => {
   return (
     <Box flex>
       <Avatar
         story="default"
         online
-        src={user.avatar.startsWith("http") ? user.avatar : undefined}
+        src={userInfo.avatar.startsWith("http") ? userInfo.avatar : undefined}
       >
-        {user.avatar}
+        {userInfo.avatar}
       </Avatar>
       <Box ml={4}>
-        <Text.Title>{user.name}</Text.Title>
-        <Text>{user.id}</Text>
+        <Text.Title>{userInfo.name}</Text.Title>
+        <Text>{userInfo.id}</Text>
       </Box>
     </Box>
   );

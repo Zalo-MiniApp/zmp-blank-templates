@@ -1,4 +1,3 @@
-
 import { atom, selector } from "recoil";
 import { getUserInfo } from "zmp-sdk";
 
@@ -14,4 +13,3 @@ export const displayNameState = atom({
   key: "displayName",
   default: "",
 });
-
