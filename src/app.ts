@@ -3,7 +3,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 
 // Tailwind stylesheet
-import "css/tailwind.css";
+import "css/tailwind.scss";
 
 // ZaUI stylesheet
 import "zmp-ui/zaui.css";
