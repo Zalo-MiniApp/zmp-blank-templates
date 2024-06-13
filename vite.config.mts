@@ -1,12 +1,13 @@
 import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
+import zaloMiniApp from "zmp-vite-plugin";
 import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default () => {
   return defineConfig({
     root: "./src",
     base: "",
-    plugins: [react(), tsconfigPaths()],
+    plugins: [zaloMiniApp(), react(), tsconfigPaths()],
   });
 };
