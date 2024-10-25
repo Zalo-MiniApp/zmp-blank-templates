@@ -15,9 +15,9 @@
     "Samsung >= 5"
   ],
   "scripts": {
+    "login": "zmp login",
     "start": "zmp start",
-    "deploy": "zmp deploy",
-    "build:css": "postcss src/css/tailwind.css -o src/css/styles.css"
+    "deploy": "zmp deploy"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
