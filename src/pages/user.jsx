@@ -9,12 +9,12 @@ import {
   Icon,
   useNavigate,
 } from "zmp-ui";
-import { useRecoilValue } from "recoil";
 import { displayNameState, userState } from "../state";
+import { useAtomValue } from "jotai";
 
 const UserPage = () => {
-  const { userInfo: user } = useRecoilValue(userState);
-  const displayName = useRecoilValue(displayNameState);
+  const { userInfo: user } = useAtomValue(userState);
+  const displayName = useAtomValue(displayNameState);
   const navigate = useNavigate();
   return (
     <Page className="page">
