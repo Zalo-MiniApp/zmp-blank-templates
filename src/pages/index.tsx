@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
-import { List, Page, Icon, useNavigate } from "zmp-ui";
-import UserCard from "components/user-card";
+import { Icon, List, Page, useNavigate } from "zmp-ui";
+
+import UserCard from "@/components/user-card";
 
 const HomePage: React.FunctionComponent = () => {
   const navigate = useNavigate();

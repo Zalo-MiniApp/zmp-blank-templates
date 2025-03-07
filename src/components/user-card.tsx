@@ -1,10 +1,11 @@
+import { useAtomValue } from "jotai";
 import React from "react";
-import { useRecoilValue } from "recoil";
-import { userState } from "state";
 import { Avatar, Box, Text } from "zmp-ui";
 
+import { userState } from "@/state";
+
 const UserCard: React.FunctionComponent = () => {
-  const { userInfo } = useRecoilValue(userState);
+  const { userInfo } = useAtomValue(userState);
 
   return (
     <Box flex>
