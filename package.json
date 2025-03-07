@@ -20,18 +20,15 @@
     "deploy": "zmp deploy"
   },
   "dependencies": {
-    "prop-types": "^15.8.1",
+    "jotai": "^2.12.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.0",
-    "recoil": "^0.7.7",
     "zmp-sdk": "latest",
     "zmp-ui": "latest"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
-    "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
     "cross-env": "^7.0.3",
@@ -41,7 +38,6 @@
     "sass": "^1.76.0",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.13",
-    "vite-tsconfig-paths": "^4.3.2",
-    "zmp-vite-plugin": "^1.1.1"
+    "zmp-vite-plugin": "latest"
   }
 }

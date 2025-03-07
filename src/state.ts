@@ -1,15 +1,12 @@
-import { atom, selector } from "recoil";
+import { atom } from "jotai";
 import { getUserInfo } from "zmp-sdk";
 
-export const userState = selector({
-  key: "user",
-  get: () =>
-    getUserInfo({
-      avatarType: "normal",
-    }),
-});
+// To get started with Jotai, check out: https://tutorial.jotai.org/quick-start/intro
 
-export const displayNameState = atom({
-  key: "displayName",
-  default: "",
-});
+export const userState = atom(() =>
+  getUserInfo({
+    avatarType: "normal",
+  })
+);
+
+export const displayNameState = atom("");

@@ -1,5 +1,5 @@
 import React from "react";
-import { Sheet, Button, Page, Text, useNavigate } from "zmp-ui";
+import { Button, Page, Sheet, Text, useNavigate } from "zmp-ui";
 
 const AboutPage: React.FunctionComponent = (props) => {
   const [actionSheetOpened, setActionSheetOpened] = React.useState(false);
