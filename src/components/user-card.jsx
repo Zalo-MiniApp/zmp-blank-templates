@@ -1,10 +1,10 @@
 import React from "react";
 import { Avatar, Box, Text } from "zmp-ui";
-import { useRecoilValue } from "recoil";
 import { userState } from "../state";
+import { useAtomValue } from "jotai";
 
 const UserCard = () => {
-  const { userInfo } = useRecoilValue(userState);
+  const { userInfo } = useAtomValue(userState);
 
   return (
     <Box flex>
