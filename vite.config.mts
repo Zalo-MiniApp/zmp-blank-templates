@@ -8,6 +8,9 @@ export default () => {
     root: "./src",
     base: "",
     plugins: [zaloMiniApp(), react()],
+    build: {
+      assetsInlineLimit: 0,
+    },
     resolve: {
       alias: {
         "@": "/src",
