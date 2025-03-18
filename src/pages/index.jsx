@@ -1,34 +1,37 @@
-import React, { Suspense } from "react";
-import { List, Page, Icon, useNavigate } from "zmp-ui";
-import UserCard from "../components/user-card";
+import { openMiniApp } from "zmp-sdk";
+import { Box, Button, Icon, Page, Text } from "zmp-ui";
 
-const HomePage = () => {
-  const navigate = useNavigate();
+import Clock from "../components/clock";
+import Logo from "../components/logo";
+import bg from "../static/bg.svg";
+
+function HomePage() {
   return (
-    <Page className="page">
-      <Suspense>
-        <div className="section-container">
-          <UserCard />
-        </div>
-      </Suspense>
-      <div className="section-container">
-        <List>
-          <List.Item
-            onClick={() => navigate("/about")}
-            suffix={<Icon icon="zi-arrow-right" />}
-          >
-            <div>About</div>
-          </List.Item>
-          <List.Item
-            onClick={() => navigate("/user")}
-            suffix={<Icon icon="zi-arrow-right" />}
-          >
-            <div>User</div>
-          </List.Item>
-        </List>
-      </div>
+    <Page
+      className="flex flex-col items-center justify-center space-y-6 bg-cover bg-center bg-no-repeat bg-white dark:bg-black"
+      style={{
+        backgroundImage: `url(${bg})`,
+      }}
+    >
+      <Box></Box>
+      <Box textAlign="center" className="space-y-1">
+        <Text.Title size="xLarge">Hello world!</Text.Title>
+        <Clock />
+      </Box>
+      <Button
+        variant="primary"
+        suffixIcon={<Icon icon="zi-more-grid" />}
+        onClick={() => {
+          openMiniApp({
+            appId: "1070750904448149704", // ZaUI Components
+          });
+        }}
+      >
+        ZaUI Component Library
+      </Button>
+      <Logo className="fixed bottom-8" />
     </Page>
   );
-};
+}
 
 export default HomePage;
