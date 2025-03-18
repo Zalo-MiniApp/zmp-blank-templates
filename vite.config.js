@@ -8,5 +8,8 @@ export default () => {
     root: "./src",
     base: "",
     plugins: [zaloMiniApp(), react()],
+    build: {
+      assetsInlineLimit: 0,
+    },
   });
 };

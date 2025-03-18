@@ -18,6 +18,6 @@ if (!window.APP_CONFIG) {
 }
 
 // Mount the app
-import App from "./components/app";
+import Layout from "./components/layout";
 const root = createRoot(document.getElementById("app"));
-root.render(React.createElement(App));
+root.render(React.createElement(Layout));
