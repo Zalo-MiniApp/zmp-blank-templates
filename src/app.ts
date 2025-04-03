@@ -1,7 +1,7 @@
-// Tailwind stylesheet
-import "@/css/tailwind.scss";
 // ZaUI stylesheet
 import "zmp-ui/zaui.css";
+// Tailwind stylesheet
+import "@/css/tailwind.scss";
 // Your stylesheet
 import "@/css/app.scss";
 
