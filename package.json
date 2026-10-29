@@ -17,25 +17,26 @@
   "scripts": {
     "login": "zmp login",
     "start": "zmp start",
+    "build": "vite build . --outDir www --emptyOutDir",
     "deploy": "zmp deploy"
   },
   "dependencies": {
     "jotai": "^2.12.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "zmp-sdk": "latest",
-    "zmp-ui": "latest"
+    "zmp-sdk": "^2.53.3",
+    "zmp-ui": "^1.11.15-2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
     "cross-env": "^7.0.3",
     "postcss": "^8.4.38",
-    "postcss-cli": "^8.3.1",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-cli": "^11.0.1",
+    "postcss-preset-env": "^10.0.2",
     "sass": "^1.76.0",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.13",
-    "zmp-vite-plugin": "latest"
+    "zmp-vite-plugin": "^1.1.6"
   }
 }
